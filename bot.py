@@ -18,6 +18,9 @@ from pyrogram import types
 from Script import script 
 from datetime import date, datetime 
 import pytz
+from plugins.webcode import bot_run
+
+PORT_CODE = environ.get("PORT", "8080")
 
 class Bot(Client):
 
@@ -46,6 +49,13 @@ class Bot(Client):
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
         logging.info(script.LOGO)
+        
+        client = webserver.AppRunner(await bot_run())
+        await client.setup()
+        bind_address = "0.0.0.0"
+        await webserver.TCPSite(client, bind_address,
+        PORT_CODE).start()
+        
         tz = pytz.timezone('Asia/Kolkata')
         today = date.today()
         now = datetime.now(tz)

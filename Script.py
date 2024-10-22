@@ -183,7 +183,7 @@ Nᴀᴍᴇ - {}"""
 
 <b>
 ╭─────── • ◆ • ───────╮
-🔅 Dᴀʀᴋ Mᴏᴅᴇ :  <a href="https://t.me/addtheme/DQ_The_File_Donor_Theme">Tᴏᴜᴄʜ</a>
+🔅 Support :  <a href="https://t.me/kuttusprt_bot>Tᴏᴜᴄʜ</a>
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========

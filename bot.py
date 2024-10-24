@@ -71,7 +71,7 @@ class Bot(Client):
         while True:
             await asyncio.sleep(86400)  # Sleep for 24 hours (86400 seconds)
             logging.info("Restarting bot...")
-            await self.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+            await self.send_message(chat_id=LOG_CHANNEL, text=script.RERESTART_TXT.format(today, time))
             await self.stop()
             await self.start() 
 
